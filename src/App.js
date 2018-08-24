@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import Nav from './components/Nav/Nav';
-import Auth from './components/Auth/Auth';
-import Dashboard from './components/Dashboard/Dashboard';
-import Form from './components/Form/Form';
-import Post from './components/Post/Post';
-// import routes from './routes'
+import routes from './routes'
+// import Auth from './components/Auth/Auth';
+// import Dashboard from './components/Dashboard/Dashboard';
+// import Form from './components/Form/Form';
+// import Post from './components/Post/Post';
 
 
 class App extends Component {
@@ -14,11 +14,11 @@ class App extends Component {
     return (
       <div className="App">
         <Nav />
-        <Auth />
+        {/* <Auth />
         <Dashboard />
         <Form />
-        <Post />
-        {/* {routes} */}
+        <Post /> */}
+        {routes}
       </div>
     );
   }

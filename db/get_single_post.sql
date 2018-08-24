@@ -1,0 +1,1 @@
+select * from helousers as u join heloposts as p on u-id=p.author_id where title like $1;
