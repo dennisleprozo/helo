@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
-import { Router } from "react-router";
+import { withRouter } from "react-router";
 
 function Nav(props) {
   let displayNavOrNot =
@@ -34,7 +34,7 @@ function mapStateToProps(state) {
   };
 }
 
-export default Router(connect(mapStateToProps,
+export default withRouter(connect(mapStateToProps,
     null)(Nav)
 );
 
